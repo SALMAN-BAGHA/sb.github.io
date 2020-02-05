@@ -1,0 +1,462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="Style.css"  />
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+</head>
+<style>
+
+.a{
+	background-color:#000;
+	width:100%;
+	height:90px;
+	}
+    #about
+	{
+		background-color:#000;
+		height:900px;
+		width:100%;
+		}
+		.contact-form { width:85%; max-width:600px; padding:30px 40px; text-align:center; margin:0 auto; }
+.contact-form h1 { font-weight:200 }
+#review .col-md-6 { margin-bottom: 50px;}
+
+.contact-form { width:100%; padding:30px 0px; }
+.txtb { border:1px solid #039; border-radius:8px; margin:8px 0; padding:12px 18px; color:#006; }
+.txtb label { display:block; text-align:left; text-transform:uppercase; }
+.txtb input, .txtb textarea { width:100%; background:none; border:none; outline:none !important; font-size:18px; margin-top:6px; }
+.button { display:block; background-color:#003; color:white; padding:8px 0; cursor:pointer; margin-top:5px; width:100%; border:none; outline:none; }
+.user-icon {position:relative; float:right; width: 80%; margin-top:25px; min-height:110px;}
+.user-icon-img{position:absolute; top:0; right:0;}
+
+
+
+
+
+
+
+    </style>
+    <script type="text/javascript">
+  
+function validate(){
+
+var regName= /^[a-zA-Z]+[a-zA-Z]+$/;
+var email=/^[a-z @ A-Z.com]+[a-z @ A-Z.com]+$/;
+var regphone= /^\d{11}$/;
+
+var name=document.getElementById('name').value;
+
+var phone=document.getElementById('phone').value;
+
+var email=document.getElementById('email').value;
+
+if(!regName.test(name)){
+alert('Please enter valid name');
+document.getElementById('name').focus();
+}
+if(!regphone.test(name)){
+alert('Please enter valid number');
+document.getElementById('phone').focus();
+}
+
+if(!email.test(email) && null){
+alert('Please enter valid email');
+document.getElementById('email').focus();
+}
+
+
+return false;
+}
+
+
+</script>
+
+
+
+
+
+<body>
+<!--NAVBAR-->
+
+
+<nav class="navbar navbar-expand-sm bg-black navbar-dark a navbar-fixed-top " >
+  <!-- Brand -->  <img src="pics/download (1).jpg" width="70px" height="60px"  />
+
+  <!-- Links -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link active" href="INDEX.html">HOME</a>
+    </li>
+<li class="nav-item">
+      <a class="nav-link" href="INDEX.html#about">ABOUT US</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="INDEX.html#faci">FACILITIES</a>
+    </li>
+   <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="" id="navbardrop" data-toggle="dropdown">
+        EVENTS&nbsp;PLACES
+      </a>
+      <div class="dropdown-menu">
+      
+        <a class="dropdown-item" href="INDEX.html#event">MEETING ROOM</a>
+        <a class="dropdown-item" href="INDEX.html#event1">PARTY SPACE</a>
+        <a class="dropdown-item" href="INDEX.html#event2">AUDITORIUM</a>
+         </div>
+  
+<li class="nav-item">
+      <a class="nav-link" href="INDEX.html#contact">CONTACT&nbsp;US</a>
+    </li>
+<li class="nav-item">
+      <a class="nav-link" href="#">MEMBERSHIP</a>
+    </li>
+<li class="nav-item">
+      <a class="nav-link" href="#">FEEDBACK</a>
+    </li>
+
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        CATEGORIES
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">INDOOR GAMES</a>
+        <a class="dropdown-item" href="#">OUTDOOR GAMES</a>
+         </div>
+    </li>
+  </ul>
+  
+  <div style="float:right; margin-top:10px;">
+  <form class="form-inline" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" >
+    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" style="color:#999;">Search</button>
+  </form></div> 
+  </div>
+  </nav>
+  <!-- nav section end -->
+<!-- BACKGROUND-->
+
+<div class="" style="margin-top:80px;"> 
+
+ <div class="hero-bkg-animated"  style="height:600px;">
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect"  style="width:300px; 
+    height:300px; margin-top:140px; margin-left:350px;">
+        <img class="img-responsive" src="pics/1.jpg" style="height:300px; width:100%;">
+        
+        <div class="overlay">
+            <h2 style="color:#061075;">STAR SPORTS CLUB</h2>
+            <a class="info" href="#" style="color:#999;">CLICK HERE <br/>
+                                         TO<br/>
+                                      JOIN OUR <br/>  
+                                        CLUB <br/>              </a>
+        
+    </div>
+    </div>
+<div id='title' style="margin-left:780px; margin-top:220px;"class="animated bounce ">
+
+<h1 style="text-align:center; font-family:fantasy; color:#032e59;font-size:50px;font-style: italic;">
+WELCOME&nbsp;&nbsp;&nbsp;TO <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STAR <br/>
+SPORTS&nbsp;&nbsp;&nbsp;CLUB 
+</h1>
+<h4 style="color:#333; margin-left:-30px;">ALL&nbsp;&nbsp;DAY&nbsp;&nbsp;WE&nbsp;&nbsp;DREAM&nbsp;&nbsp;ABOUT&nbsp;&nbsp;SPORTS!!!</h3>
+
+</div>
+</div>
+</div>
+</div>
+  
+  
+
+<!--BKG SECTION END-->
+<!--ABOUT US SECTION -->
+
+<div id="about" style="margin-top:-20px; background-color:#525354; height:660px;">
+<div class="aboutus">
+<img src="pics/table tennis.jpg" style="border-radius:50%; width:200Px;height:200px; margin-top:100px; margin-left:550px;" />
+<div>
+<h2 style="color:#000; text-align:center;margin-left:-40px;">ALL ABOUT US</h2>
+<h4>
+<p style="text-align:center; color:#000; margin-top:60px;">Located in Karachi,Pakistan  STAR SPORTS CLUB provides regulation courts and playing <br/>fields for more than a dozen sports in one convenient location. We offer climate controlled indoor sports,outdoor sports and fitness facilities, <br/>as well as both natural and synthetic outdoor fields for year-round use. Stop by for a free visit to see our first-class<br/> facilities and meet our friendly, professional staff.</p>
+</h4>
+</div>
+</div>
+
+</div>
+
+<!--ABOUT US SECTION END-->
+
+<!--FACILITIES SECTION -->
+<div id="faci" style="margin-top:-20px;background-color:#333; height:660px;">
+<div class="aboutus" >
+<h1><p style="text-align:center; color:#CCC; padding-top:100px;">FACILITIES AVAILABLE</p>
+</h1>
+<h4>
+<p style="text-align:center; color:#CCC; padding-top:20px; ">As the most innovative sports facility in Karachi, STAR SPORTS CLUB is the premier destination for<br/> individuals, families, athletes, and businesses. With more than 700,000 square feet of usable space under one roof, our unique capacity<br/> creates an unparalleled experience for our members and guests.</p>
+</h4>
+
+<div>
+
+<div class="container">
+  <h2>Image Gallery</h2>
+  <p>The .thumbnail class can be used to display an image gallery.</p>
+  <p>The .caption class adds proper padding and a dark grey color to text inside thumbnails.</p>
+  <p>Click on the images to enlarge them.</p>
+  <div class="row" style="margin-top:-120px;">
+    <div class="col-md-6">
+      <div class="imag">
+        <a href="pics/yoga1.jpg" target="_blank">
+          <img src="pics/yoga2.jpg" alt="Lights" style="width:100%; height:300px;">
+          </a>
+        <p style="color:#FFF; margin-top:-170px; margin-left:10px;">  
+         &nbsp;&nbsp;&nbsp; YOGA STUDIO<br/>
+Try out our Yoga Studio where you can enjoy a casual<br/> workout or push yourself with some intense exercises. Come<br/> by today and leave feeling better than you have in years — <br/>sure, you’ll use our Yoga Studio, but that fire comes from<br/> within you! We just help you let it out<br/>. Pay us a visit and try it out today.
+      <p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="image">
+        <a href="/w3images/nature.jpg" target="_blank">
+          <img src="pics/gyn.jpg" alt="Nature" style="width:100%; height:300px;">
+        </a>
+        <p style="color:#FFF; margin-top:-170px; margin-left:10px;">  
+         &nbsp;&nbsp;&nbsp; FREE-WEIGHT GYM<br/>
+    
+After a hard day at work, stop by and enjoy our Free-Weight<br/> Gym. There’s no better way to recharge than letting go of all<br/> your worries at our state of the art Free-Weight Gym<br/>. Additionally, the STAR SPORTS CLUB Free-Weight Gym<br/> can complement a wide variety of activities. For more<br/>information about getting fit and active with us<br/>, please contact us below.
+      <p>
+      </div>
+    </div>  
+    </div>
+</div>
+
+</div>
+
+<!--FACILITIES SECTION END-->
+<div id="event" style="background-color:#999;margin-top:90px; width:100%; height:15=00px;">
+<h1 style="color:#000; text-align:center; padding-top:110px;">OUR EVENT SPACES</h1>
+<p style="text-align:center;color:#333;">Ready to Reserve</p>
+<div id="places" style="background-color:#000; width:1100px; height:400px; margin-left:150px; margin-top:50px;">
+<div>
+<img src="pics/meeting room.jpg" width="600px" height="400px" style="float:right" />
+</div>
+<div>
+<h3 style="text-align:center; color:#003; padding-top:130px;">MEETING ROOM</h3>
+ <h4 style="text-align:center;">As one of our newest event spaces, this area is highly requested. Perfect for many types of groups and activities, this space could be exactly what you’re looking for. Make your reservation today!
+</h4>
+</div>
+
+
+</div>
+
+
+</div>
+
+<!-- EVENT  SECTION -->
+
+
+<div id="event1" style="background-color:#999; width:100%; height:700px; margin-top:-20px;">
+<h1 style="color:#666; text-align:center; padding-top:100px;"></h1>
+
+<div id="places2" style="background-color:#000; width:1100px; height:400px; margin-left:130px; padding-top:20px;margin-top:50px;"> >
+<div>
+<img src="pics/party place.jpg" width="600px" height="400px" style="float:right;height:400px;margin-top:-40px;" />
+</div>
+<div>
+<h3 style="text-align:center; color:#003; padding-top:90px;">PARTY SPACE</h3>
+ <h4 style="text-align:center;">
+This event space comes with full amenities and can be customized to your group’s specific needs. If you’d like to know more about the size, what’s included or what’s available, simply get in touch.</h4>
+</div>
+
+</div>
+
+<div id="event2" style="background-color:#999; width:100%; height:700px; margin-top:-20px;">
+<h1 style="color:#666; text-align:center; padding-top:100px;"></h1>
+
+
+<div id="places2" style="background-color:#000; width:1100px; height:400px; margin-left:130px; padding-top:20px;margin-top:50px; " >
+<div>
+<img src="pics/Auditorium.jpg" width="600px" height="400px" style="float:right;height:400px;margin-top:-20px;" />
+</div>
+<div>
+<h3 style="text-align:center; color:#069; padding-top:100px;">AUDITORIUM</h3>
+ <h4 style="text-align:center;">
+ 
+As one of our most popular event spaces, the availability for this space fills up fast - so make sure you book today to catch the day you’re looking for! And don’t hesitate to contact us with any questions.
+</h4>
+</div>
+
+</div>
+
+
+</div>
+<!--event SECTION END-->
+<!--contact SECTION-->
+
+<div id="contact" class="container-fluid wrapper" style="background-color:#000;">
+  <div class="container" style="margin-top:30px;" id="contain">
+    <div class="all" style="background-color:#CCC; width:1300px;; height:600px;  margin-left:-90px; margin-top:50px;">
+    <div class="contact">
+      <h1 style="color:#003;text-align:center; padding-top:20px;margin-left:-30px; "> CONTACT US </h1>
+
+      
+        <div class="col-md-3" style="margin:35px;padding:40px;font-size:18px; text-decoration:none; text-align:center;"><a href="INDEX.html#map"> <i class="fa fa-map-marker" style="font-size:24px; text-decoration:none; color:#000;" id="icon01"></i></a>
+          <h3  style="color:#003;   ">LOCATION</h3>
+          <h4 style="color:#006;">STAR SPORTS CLUB</h4>
+          <p>Street No. 4,Karachi center,Karachi
+           
+            </p>
+        </div>
+        <div>
+        
+<div class="col-md-3"  style="padding-top:80px; text-align:center;" > <i class="fa fa-mobile" style="font-size:24px !important;color:#000;" id="icon03"></i>
+          <h3 style="color:#003;">PHONE NUMBER</h3>
+          <br>
+           03367766424<br>
+           03354889921   </div>
+        </div>
+        </div>
+        <div class="col-md-3" style="float:left; margin-top:250px; margin-left:-500px;"><i class="fa fa-envelope fa-1" 
+        style="font-size:18px;color:#000;  text-align:center; padding-left:135px;" id="icon02"></i>
+          <h3 style="color:#003; text-align:center; ">GMAIL</h3>
+          <p style="text-align:center;">m.salmanbagha214@gmail.com<br>
+            muhammadsalmanshahid2@gmail.com</p>
+        </div>
+       
+        <div>
+        <div  class="contact-form" style="margin-top:-240px; float:right; margin-right:10px; padding-top:-70px; ">
+          <form method="post">
+  
+            <div class="txtb">
+              <label>NAME</label>
+              <input type="text" name="Username" id="name"  placeholder=" Enter Your Username" required/>
+            </div>
+            <div class="txtb">
+              <label>PHONE</label>
+              <input type="text" name="Username" id="phone"  placeholder=" Enter Your number" required/>
+            </div>
+            
+            <div class="txtb">
+              <label>EMAIL</label>
+              <input type="email" name="Email" id="email" placeholder="Enter Your Email" required/>
+            </div>
+            <div class="txtb">
+              <label>MESSAGE</label>
+              <textarea required  resize="none"> </textarea>
+            </div>
+            <div class="button">
+              <button class="button" onclick="validate()">SEND</button>
+            </div>
+          </form>
+      </div>
+      </div>
+  </div>
+    </div>
+  
+  </div>
+ 
+<!--contact SECTION END-->
+<!--map SECTION-->
+<div id="map" style="background-color:#666;width:100%;height:600px;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.2305536398885!2d67.05622031447811!3d24.890116250199334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33efad27a6395%3A0xe79a16555d2d097!2sKarachi%20Center%2C%20P.I.B%20Road%2CUniversity%20Road%2CGulshan-e-iqbal.%D8%8C%20Ghausia%20Colony%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1579412381807!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0; width:1200px; height:540px; margin-top:45px; margin-left:50px;" allowfullscreen=""></iframe>
+<!--map SECTION END-->
+        <!----
+  ====================================
+          Footer section
+  ====================================
+  --->
+
+
+
+<footer class="page-footer font-small mdb-color pt-4 bg-dark" style="margin-top:15px;">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-light text-md-left">
+
+    <!-- Footer links -->
+    <div class="row text-center text-md-left mt-3 pb-2">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mt-0 mr-10 ">
+        <h3 class="text-uppercase mb-1 font-weight-bold">STAR SPORTS CLUB</h3>
+        <p>Project Director/Company Coordinator</p>
+        <h5>"ALL DAY WE DREAM ABOUT SPORTS"</h5>
+        <p></p>
+      </div>
+      <!-- Grid column -->
+
+     
+      <!-- Grid column -->
+      
+    <!--=========================
+              Grid column
+        ========================= -->
+      <div class="col-md-4  mx-auto mb-0" >
+        <h4 style="margin-left: 5%;" class="text-uppercase mb-4 font-weight-bold" >Contact</h4>
+      
+        <p style="margin-top:  ">
+          <i  style="font-size:24px" class="fa">&#xf015;</i> Pakistan,Karachi,University Road </p>
+       
+        <p style="margin-top: ">
+          <i style="font-size:24px" class="fa">&#xf0e0;</i> m.salmanbagha214@gmail.com</p>
+        
+        <p style="margin-top: ">
+          <i style="font-size:110%" class="fa">&#xf095;</i> +923456789</p>
+          
+        </div> 
+    </div>
+  </div>
+<!-----===========================================
+                social links
+        ==========================================-->
+   
+    
+<hr class="bg-light">
+
+    <!---=========================
+              Grid row
+        ========================= -->
+    <div class="row">
+<div class=" col-lg-4 ml-md-4 text-light">
+        <p>This website is Design by MUHAMMAD SALMAN SHAHID</p>
+         <hr class="bg-light">
+      </div>
+     
+      <div class=" col-md-6 text-light ">
+
+        <p class=" text-lg-right mt-3 "> © 2019 Allright:
+            <strong> SPORTS CLUB.com</strong>       
+        </p>
+        
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+<!--=========================
+         Footer End
+    =========================== -->
+
+</body>
+</html>
